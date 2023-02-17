@@ -1,0 +1,176 @@
+/* --------------------------------- STYLES GENERAUX -------------------------------- */
+
+html {
+    /* Ramener la taille par défaut à 10px : 1rem = 10px -> faciliter les conversions */ 
+    font-size : 62.5%;
+}
+
+body {
+    background-color : #f2f1f4;
+    padding : 2.5rem; /* soit 25px */
+    color: #6a6d70;
+    font-family: "Open Sans", Arial;
+    font-size : 1.6rem;
+    line-height : 1.8;
+}
+
+/* A partir de desktop */
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width : 1500px;
+        margin-right : auto;
+        margin-left : auto;
+    }
+}
+
+a {
+    color: #49b2b4;
+    text-decoration : none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration : underline;
+    outline : none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: normal;
+}
+
+
+h1,h2 {
+	margin: 0;
+	border-bottom: 1px solid #30A894;
+	color: #30a894;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+img {
+    max-width : 100%;
+    height : auto;
+}
+
+
+/* ------------------------------ BANNIERE --------------------------------- */
+
+header {
+    text-align : center;
+}
+
+nav {
+    display : flex;
+    
+    /* Axe principal : vertical */
+    flex-direction : column;
+    gap : 2.5rem;
+    
+    font-family: "PT Sans Narrow", sans-serif;
+    background-color: #30a894;
+}
+
+nav a {
+    color : white;
+    font-size : 1.6em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        /* Axe principal : horizontal (valeur par défaut) */
+        flex-direction : row;
+        justify-content : space-evenly;
+    }
+    
+}
+
+
+/* ------------------------------ MAIN --------------------------------- */
+
+aside {
+    display : none;
+}
+
+@media only screen and (min-width : 767px) {
+    aside {
+        display : block;
+        padding : 1em;
+        background-color: #b8dcb1;
+		color: #314c35;
+    }
+}
+
+@media only screen and (min-width : 1023px) {
+
+    main {
+        display : flex;
+        gap : 2.5rem;
+    }
+    
+    /* Cibler tous les enfants directs de main */
+    main > * {
+        flex : 1;
+    }
+    
+    section {
+        flex-grow : 2;
+    }
+
+}
+
+/* ------------------------------ PIED DE PAGE --------------------------- */
+
+footer {
+    font-size : 0.75em;
+    text-align : center;
+}
+
+footer img {
+    width : 50px;
+    height : auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

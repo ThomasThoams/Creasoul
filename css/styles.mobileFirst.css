@@ -1,0 +1,194 @@
+/* --------------------------------- STYLES GENERAUX -------------------------------- */
+
+html {
+    /* Ramener la taille par défaut à 10px : 1rem = 10px -> faciliter les conversions */ 
+    font-size : 62.5%;
+}
+
+body {
+    background-color : #f2f1f4;
+    padding : 2.5rem; /* soit 25px */
+    color: #6a6d70;
+    font-family: "Open Sans", Arial;
+    font-size : 1.6rem;
+    line-height : 1.8;
+}
+
+/* A partir de desktop */
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width : 1500px;
+        margin-right : auto;
+        margin-left : auto;
+    }
+}
+
+a {
+    color: #49b2b4;
+    text-decoration : none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration : underline;
+    outline : none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "PT Sans Narrow", sans-serif;
+	font-weight: normal;
+}
+
+
+h1,h2 {
+	margin: 0;
+	border-bottom: 1px solid #30A894;
+	color: #30a894;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+img {
+    max-width : 100%;
+    height : auto;
+}
+
+
+/* ------------------------------ BANNIERE --------------------------------- */
+
+header {
+    text-align : center;
+}
+
+nav {
+    font-family: "PT Sans Narrow", sans-serif;
+    background-color: #30a894;
+}
+
+nav a {
+    display : block;
+    padding : 2.5rem;
+    color : white;
+    font-size : 1.6em;
+}
+
+@media screen and (min-width: 1024px) {
+    nav a {
+        display : inline-block;
+    }
+}
+
+
+/* ------------------------------ MAIN --------------------------------- */
+
+aside {
+    display : none;
+}
+
+/* A partir de la version tablette : écran dont la largeur est de 768px minimum */
+@media screen and (min-width: 768px) {
+    
+    aside {
+        display : block;
+        padding : 1em;
+        background-color: #b8dcb1;
+		color: #314c35;
+    }
+    
+}
+
+/* A partir de la version desktop : aside est à côte de la section  */
+@media screen and (min-width: 1024px) {
+    
+    section {
+        float : left;
+        width : 70%;
+    }
+    
+    aside {
+        margin-left : calc(70% + 2.5rem); 
+    }
+    
+    footer {
+        clear : left;
+    }
+}
+
+
+/* ------------------------------ PIED DE PAGE --------------------------- */
+
+footer {
+    font-size : 0.75em;
+    text-align : center;
+}
+
+footer img {
+    width : 50px;
+    height : auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: #38b5a0;
+}
+
+/* --------------------------------- DEMOS --------------------------------- */
+
+/* Démo em et rem : Cibler les elements ul class="typo-em" */
+ul.typo-em {
+    font-size : 0.8em;
+}
+
+ul.typo-em li {
+    font-size : 0.8em;
+}
+
+
+ul.typo-rem {
+    font-size : 0.8em;
+}
+
+ul.typo-rem li {
+    font-size : 1rem;
+}
